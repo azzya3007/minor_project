@@ -1,2 +1,2 @@
 # minor_project
- Здесь будет наш проект по майнору в первом модуле.
+https://github.io/azzya3007/minor_project/blob/main/main_code.html
