@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт про праздники</title>
+    <style type="text/css">
+        BODY {
+         background:#d6ca92
+        }
+        #otdel, #data, #kod, #name, #birthday, #photo {position: absolute}
+        #otdel {
+            right: 670px;
+            top: 2855px 
+        }
+        #data {
+            left: 640px;
+            top: 2905px
+        }
+        #kod {
+            right: 660px;
+            top: 2905px
+        }
+        #name {
+            left: 740px;
+            top: 3130px
+        }
+        #birthday {
+            right: 658px;
+            top: 3197px
+        }
+        #photo {
+            left: 572px;
+            top: 3140px
+        }
+        #sidebar { position: fixed; } 
+        #sidebar { overflow: auto; padding: 10px; }
+        #sidebar { 
+            width: 360px; background: #ECF5E4; border-right: 4px solid #7B5427;
+            top: 91px; 
+            bottom: 80px 
+        }
+        nav a {
+            color:#7B5427;
+        }
+        nav a.active {
+            color:brown;
+        }
+        #header {
+            height: 80px; 
+            background: #c89a6c; border-bottom: 3px solid #7B5427;
+        }
+        #header h1 { padding: 20px; margin: 0; }
+        #head_text {
+            color:rgb(84, 42, 19);
+            background:#c89a6c;
+            left: 500px;
+        }
+        #main_text { 
+            color:black;
+            margin-left: 420px;
+            margin-right: 90px;
+        }
+        #main_photo {
+            margin-left: 400px;
+            width: 550px;
+        }
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            margin-left: 400px;
+            margin-top: 20px;
+            width: 900px;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #uslugi {
+            margin-left: 420px;
+            margin-right: 100px;
+        }
+        #form {
+            margin-left: 420px
+        }
+        .thumbnail {
+            width: 100px; /* Размер миниатюры */
+            cursor: pointer; /* Указатель для курсора */
+            margin-left: 100px;
+            margin-top: 30px
+        }
+        .large-image {
+            display: none; /* Скрыть большое изображение */
+        }
+        #algo {
+            margin-left: 420px
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar"><ul>
+        <nav>
+            <li><h3><a href="#home">Домашняя страница</a></h3></li>
+            <li><h3><a href="#calendar">Календарь праздников</a></h3></li>
+            <li><h3><a href="#services">Наши услуги</a></h3></li> 
+            <li><h5><a href="#passport">Изменяем кириллицу на латиницу по клику</a></h5></li>
+            <li><h5><a href="#algorithm">Решение алгоритмической задачи</a></h5></li> 
+        </nav>
+    </ul> 
+    <a href="images/prazdnik.jpg" target="_blank" onclick="openImage(event)">
+        <img src="images/podarok.jpg"  class="thumbnail">
+    </a>
+    <script src="scripts/image-open.js"></script>
+    </div>
+    <script src="scripts/header_script.js"></script>
+
+    <section id="home">
+
+        <div id="header">
+            <center>
+                <h1>Праздник! Праздник! Праздник!</h1>
+            </center>
+        </div>
+
+        <div id="main_text">
+            <blockqout>
+                <p><h3>Праздники — это особые моменты в жизни людей, когда мы останавливаемся, чтобы отпраздновать важные события, традиции или достижения. Они могут быть как национальными, так и личными, и играют значительную роль в культуре и обществе, объединяя людей и укрепляя связи между ними.</h3></p>
+            </blockqout>
+            <hr size="3" width="600" color="#7B5427">
+        </div>
+
+        <div id="main_photo"><img src="images/main_prazdnik.jpg"></a></div>
+    
+    </section>
+    <hr size="3" width="600" color="#7B5427">
+    <section id="calendar">
+        <center>
+          <h2><span style="color:#066902">Идеи праздников в октябре</span></h2>  
+        </center>
+        <div><table>
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Название праздника</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01 октября</td>
+                    <td>Международный день пожилых людей</td>
+                    <td>Отмечается с 1991 года. Призван привлечь внимание общества к проблемам пожилых людей.</td>
+                </tr>
+                <tr>
+                    <td>04 октября</td>
+                    <td>Всемирный день животных</td>
+                    <td>Отмечается с 1931 года. Цель - защита животного мира и окружающей среды.</td>
+                </tr>
+                <tr>
+                    <td>05 октября</td>
+                    <td>День учителя</td>
+                    <td>Профессиональный праздник работников образования. Отмечается в разных странах в разные даты.</td>
+                </tr>
+                <tr>
+                    <td>10 октября</td>
+                    <td>Всемирный день психического здоровья</td>
+                    <td>Памятная дата отмечается ежегодно с 1992 года. Всемирный день установлен по инициативе Всемирной федерации психического здоровья при поддержке Всемирной организации здравоохранения.</td>
+                </tr>
+                <tr>
+                    <td>16 октября</td>
+                    <td>Всемирный день продовольствия</td>
+                    <td>Всемирный день продовольствия отмечается ежегодно 16 октября. Основная цель Всемирного дня продовольствия — привлечение внимания общественности к проблеме голода и недоедания, а также к необходимости обеспечения продовольственной безопасности во всем мире.</td>
+                </tr>
+                <tr>
+                    <td>31 октября</td>
+                    <td>Хэллоуин</td>
+                    <td>Хэллоуин имеет корни в древнем кельтском празднике Самайн, который символизировал конец летнего сезона и начало зимы. В христианстве Хэллоуин предшествует Дню всех святых.</td>
+                </tr>
+            </tbody> 
+        </table></div>
+    </section>
+
+    <hr size="3" width="600" color="#7B5427">
+
+    <section id="services">
+        <p><h2 align="center"><span style="color: rgb(83, 3, 1);">Наши услуги</span></h2></p>
+        <p><h4 align="center"><span style="color: rgb(83, 3, 1);">Сделаем ваш праздник незабываемым</span></h4></p>
+    <div id="uslugi">
+        <ol>
+            <li><h3>Тематические фотозоны</h3>
+                <p>Профессиональный фотограф создает уникальные фотозоны с учетом тематики праздника и предпочтений заказчика. Гости смогут сделать яркие и запоминающиеся фотографии, которые останутся на память о событии.</p>
+            </li>
+            <li><h3>Ведение праздника</h3>
+                <ol type="A">
+                    <li><h4>Профессиональный ведущий</h4>
+                        <p>Ищете того, кто сможет превратить ваше событие в настоящий праздник? Наш опытный ведущий обеспечит идеальное сочетание веселья, эмоций и порядка. Мы поможем вам разработать уникальный сценарий, подберем музыку и развлечения, которые подойдут именно вашему событию. </p>
+                    </li>
+                    <li><h4>Тамада на свадьбу</h4>
+                        <p>Хотите, чтобы ваш праздник был наполнен народными традициями и радостью? Наш профессиональный тамада организует всё так, чтобы каждая минута была наполнена смыслом и удовольствием. От выкупа невесты до встречи молодых хлебом-солью – мы позаботимся обо всём, чтобы ваша свадьба стала настоящей сказкой!</p>
+                    </li>
+                    <li><h4>Аниматор на детский праздник</h4>
+                        <p>Детский день рождения, семейный праздник или корпоративное мероприятие – наши аниматоры создадут атмосферу радости и восторга для ваших маленьких и больших гостей. Фокусы, конкурсы, костюмы любимых героев – мы знаем, как сделать праздник ярким и незабываемым!</p>
+                    </li>
+                </ol>
+            </li>
+            <li><h3>Конкурсная программа</h3>
+                <p>Приглашаем вас принять участие в захватывающей конкурсной программе, которая сделает ваш праздник незабываемым! Наши ведущие подготовили множество интересных и веселых конкурсов для всех возрастов. Победители получат ценные призы и массу положительных эмоций!</p>
+            </li>
+        </ol>
+    </div>  
+
+    <hr size="3" width="600" color="#7B5427">
+
+    <center><h3>Форма для заказа</h3></center>
+    <div id="form">
+        
+        
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+
+    <p><h4><span style="color: rgb(113, 6, 30);">Личные данные</span></h4><input type="hidden"  name="q" value="search"></p>
+    <p>Фамилия: <input type="Text" name="last_name" size=20  value="Петров"></p>
+    <p>Имя: <input type="Text" name="first_name" size=20  value="Иван"></p>
+    <p>Номер группы: <input type="Number" name="group" size=20 value="1"></p>
+    <p>Номер телефона: <input type="Number" name="phone" size=20 value="89012345678"></p>
+    <p>Адрес электронной почты: <input type="Text" name="email" size=20 value="pochta@edu.hse.ru"></p>
+    <p>Дата: <input type="date" name="user_date"  value='2024-10-02'></p>
+
+    <p><h4><span style="color: rgb(113, 6, 30);">Ваш заказ</span></h4><input type="hidden"  name="q" value="search"></p>
+    <p>Для кого устраиваете праздник?
+        <input type="Radio" name="place" value="myself">Для себя
+        <input type="Radio" name="place" value="surprize" checked >Готовлю сюрприз
+    </p>
+
+    <p>Какие услуги вам необходимы?
+        <input type="Checkbox" name="experience"  value="10" checked>Праздничная фотозона
+        <input type="Checkbox"  name="experience"   value="20" checked>Конкурсы
+        <input type="Checkbox"  name="experience"   value="30" checked>Тамада/ведущий/аниматор
+    </p>
+
+    <p>Сколько человек будет на празднике? <select name="010_mode">
+        <OPTION value="а">до 10</OPTION>
+        <OPTION value="б">10-20</OPTION>
+        <OPTION value="в">20-30</OPTION>
+        <OPTION value="г">больше 30</OPTION>
+    </select></p>
+
+    <p> Подробно опишите вашу идею праздника
+        <br>
+        <TEXTAREA cols=80 rows=4 name="textarea" >Ваша идея</TEXTAREA>
+    </p>
+
+    <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+    </form>
+    </div>
+    </section>
+
+    <hr size="3" width="600" color="#7B5427">
+
+    <section id="passport">
+        <center>
+            <img src="images/passpotr_shablon.png" />
+        </center>
+        <div id="otdel">ГУ МВД России по г. Москве</div>
+        <div id="data">28.10.2011</div>
+        <div id="kod">770-047</div>
+        <div id="name">Райан Гослинг</div>
+        <div id="birthday">12.11.1980</div>
+        <div id="photo"><img src="images/gosling.jpg" width="110" height="145" /></div>
+        <script src="scripts/passport_script.js"> </script>
+    </section>
+
+    <hr size="3" width="600" color="#7B5427">
+
+    <section id="algorithm">
+        <div id="algo">
+            <h4>Решение алгоритмической задачи:</h4>
+        <p>Дано вещественное число A. Вычислить х = a**2+4+5  при а<62; в противном случае x = 1/(a**2) + 4a + 5</p>
+        <input type="number" id="inputA" placeholder="Введите значение A">
+        <button onclick="calculateX()">Вычислить X</button>
+        <p>Результат: <span id="result"></span></p>
+        </div>
+
+        <script src="scripts/algorithm.js"></script>
+    </section>
+    
+
+</body>
+</html>
